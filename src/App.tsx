@@ -1,8 +1,7 @@
-import "./App.css";
-import ContextPattern from "./context-pattern";
+import ContextSeperationPattern from "./context-seperation-pattern";
 
 function App() {
-  return <ContextPattern />;
+  return <ContextSeperationPattern />;
 }
 
 export default App;
