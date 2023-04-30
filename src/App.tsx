@@ -1,4 +1,4 @@
-import WindowSizeConsumer from "./function-as-child/Consumer";
+import WindowSizeConsumer from "./render-props/Consumer";
 
 function App() {
   return <WindowSizeConsumer />;
