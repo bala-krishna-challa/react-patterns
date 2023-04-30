@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import { Size } from "./types";
+import { PropsWithChildrenFunction, Size } from "./types";
 
-interface Props {
-  children: (windowSize: Partial<Size>) => JSX.Element;
-}
-
-const WindowSizeProvider: React.FC<Props> = ({ children }) => {
+const WindowSizeProvider: React.FC<
+  PropsWithChildrenFunction<{}, Partial<Size>>
+> = ({ children }) => {
   const [size, setSize] = useState<Size>({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -23,7 +21,7 @@ const WindowSizeProvider: React.FC<Props> = ({ children }) => {
       window.removeEventListener("resize", windowResizeHandler);
     };
   }, []);
-  return children({ ...size });
+  return <>{children ? children({ ...size }) : null}</>;
 };
 
 export default WindowSizeProvider;
