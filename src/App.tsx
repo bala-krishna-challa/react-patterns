@@ -1,4 +1,4 @@
-import WindowSizeConsumer from "./render-props/Consumer";
+import WindowSizeConsumer from "./component-injection-pattern/Consumer";
 
 function App() {
   return <WindowSizeConsumer />;
