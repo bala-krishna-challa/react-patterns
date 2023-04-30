@@ -1,7 +1,7 @@
-import MergeProps from "./merge-props";
+import WindowSizeConsumer from "./function-as-child/Consumer";
 
 function App() {
-  return <MergeProps />;
+  return <WindowSizeConsumer />;
 }
 
 export default App;
