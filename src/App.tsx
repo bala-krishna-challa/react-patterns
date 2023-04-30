@@ -1,7 +1,7 @@
-import ContextSeperationPattern from "./context-seperation-pattern";
+import Greetings from "./default-props/Greetings";
 
 function App() {
-  return <ContextSeperationPattern />;
+  return <Greetings />;
 }
 
 export default App;
