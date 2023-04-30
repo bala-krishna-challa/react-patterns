@@ -1,0 +1,27 @@
+/*Colours*/
+button {
+  --red: #ff6666;
+  --white: #fff;
+}
+
+/* Default Button Style */
+.btn {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid var(--red);
+  border-radius: 0.5em;
+  color: var(--red);
+  cursor: pointer;
+  margin: 20px;
+  padding: 1em 2.4em;
+  text-transform: uppercase;
+}
+
+.btn-style {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.btn-style:hover {
+  box-shadow: 0 0 40px 40px var(--red) inset;
+  color: var(--white);
+}

@@ -1,7 +1,7 @@
-import Greetings from "./default-props/Greetings";
+import MergeProps from "./merge-props";
 
 function App() {
-  return <Greetings />;
+  return <MergeProps />;
 }
 
 export default App;
