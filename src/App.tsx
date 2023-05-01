@@ -1,7 +1,7 @@
-import WindowDimensions from "./use-custom-hook";
+import MyComponentWithAuthentication from "./higher-order-component";
 
 function App() {
-  return <WindowDimensions />;
+  return <MyComponentWithAuthentication />;
 }
 
 export default App;
