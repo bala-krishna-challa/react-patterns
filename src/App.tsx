@@ -1,7 +1,7 @@
-import WindowSizeConsumer from "./component-injection-pattern/Consumer";
+import WindowDimensions from "./use-custom-hook";
 
 function App() {
-  return <WindowSizeConsumer />;
+  return <WindowDimensions />;
 }
 
 export default App;
